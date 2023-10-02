@@ -1,0 +1,71 @@
+.maincard{
+    position: relative;
+    width: 360px;
+    height: 480px;
+    background: linear-gradient(209.21deg, rgb(79, 73, 139) 13.57%, rgb(24, 16, 45) 98.38%) center center / cover;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 30px 60px, rgba(255, 255, 255, 0.25) 0px 0px 0px 0.5px inset;
+    box-sizing: border-box;
+    border-radius: 20px;
+    overflow: hidden;
+    filter: hue-rotate(-10deg);
+    display: grid;
+    -webkit-box-pack: center;
+    place-content: center;
+    transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+    cursor: pointer;
+    .anime{
+        animation: 5s linear 1s 1 normal forwards running iZKLoW;
+
+
+    .outer-circle{
+   position: absolute;
+    width: 420px;
+    height: 420px;
+    border-radius: 271px;
+    left: calc(50% - 202px);
+    top: calc(50% - 100px);
+    background: linear-gradient(rgb(23, 33, 38) 0%, rgba(195, 236, 255, 0.086) 50.94%, rgba(255, 255, 255, 0) 100%);
+}
+
+ .inner-circle{
+    position: absolute;
+    background: linear-gradient(rgb(159, 225, 255) 0%, rgba(195, 236, 255, 0.086) 50.94%, rgba(255, 255, 255, 0) 100%);
+    width: 260px;
+    height: 260px;
+    border-radius: 135px;
+    left: calc(50% - 128px);
+    top: calc(50% + -17px);
+
+ }
+}
+
+@keyframes iZKLoW{
+    0% {
+        transform: scale(1.0);
+    }
+    
+    100% {
+        transform: scale(1.2);
+    }
+
+}
+ .imgsr{
+    z-index: 0;
+    width: 300px;
+    height: 255px;
+    transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+ }
+
+}
+.maincard:hover{
+    transform: scale(1.06);
+    .imgsr{
+        width:270px ;
+        height:225px ;
+    }
+}
+
+
+
+
+

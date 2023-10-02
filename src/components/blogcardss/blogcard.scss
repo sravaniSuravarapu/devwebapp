@@ -1,0 +1,121 @@
+
+.flex-center {
+    display: flex;
+    align-items: center;
+  }
+
+  .flex-column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card {
+    border-radius: 15px;
+    padding: 20px 30px;
+  }
+
+  .card-container{
+    margin: 3% 10% 0 10%;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: space-between;
+   
+  }
+  .main-card {
+    margin-bottom: 20px;
+    .sub-card {
+      height: calc(100% - 10px);
+      width: calc(90% - 5px);
+      color: white;
+      @extend .card; /* Use the .card styles */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+      -webkit-transition: -webkit-transform 0.3s ease;
+      box-shadow: 2px 4px 50px 2px rgba(0, 0, 0, 0.10);
+      cursor: pointer;
+      
+      .c-images {
+        position: relative;
+        padding-top: 20px;
+        // @extend .flex-center; /* Use the .flex-center styles */
+        .icons{
+          position: absolute;
+          top: -2px;
+          left: 190px;
+          .icon1{
+            width: 30px;
+            
+          }
+          
+          .icon2{
+            width: 50px;
+            transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+          }
+          .icon2:hover{
+            transform: scale(1.08);
+          }
+        }
+        .size {
+          height: 130px;
+          height: 150px;
+        }
+      }
+      
+      .card-text {
+        width: 300px;
+        @extend .flex-column-center; /* Use the .flex-center styles */
+      }
+    }
+    .sub-card:hover{
+      transform: scale(1.05);
+      -webkit-transform: scale(1.08); 
+      .size{
+        
+        transform: scale(0.95);
+        transform: transform 600s ease-in;
+       
+      }
+    }
+  }
+
+
+@media screen and (max-width: 760px) {
+  .card-container .main-card{
+    width: calc(100% - 10px); /* One card per row on small screens */
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1040px) {
+  .card-container {
+    justify-content: space-between; /* Arrange cards in two columns on medium-sized screens */
+  }
+
+  .main-card {
+    width: calc(50% - 20px); /* Two cards per row on medium-sized screens */
+  }
+}
+@media screen and (min-width: 1060px){
+
+  .card-container {
+    margin: 3% 10% 0 10%;
+    justify-content: flex-start; /* Start a new row for each card on desktop */
+  }
+
+  .card-container .main-card{
+    width: calc(33% - 10px); /* Three cards in a row on large screens */
+  }
+
+}
+
+
+
+
+
+
+

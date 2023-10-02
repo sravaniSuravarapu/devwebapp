@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+.blog_container{
+    height: 100vh;
+    width: 100vw;
+    // background: linear-gradient(209.21deg, rgb(79, 73, 139) 13.57%, rgb(24, 16, 45) 98.38%);
+    position: relative;
+    .svgc1 {
+        position: absolute;
+        bottom: 0;
+        left: 0; 
+        z-index: 0;
+      }
+
+      .svgc2{
+        position: absolute;
+        bottom: 0;
+        left: 0; 
+        z-index: 0;
+       
+      }
+      .block_items{
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+        gap: 2%;
+        
+
+        .block_leftitems {
+          width: calc(30% - 5px);
+        }
+        
+        .block_rightitems {
+          display: flex;
+          flex-wrap: wrap;
+          width: calc(30% - 5px);
+
+          .domain_icon{
+            padding: 2px;
+          }
+          .blog_h1{
+            width: 63vw;
+            color: #FFF;
+            font-family: 'Nunito Sans', sans-serif;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 45px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+          }
+          .blog_h2{
+            color: #FFF;
+            font-family: 'Nunito Sans', sans-serif;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            width: 56vw;
+            height: 70px;
+            margin-bottom: 20px;
+          }
+          .taught_details{
+            display: flex;
+            .taught_image{
+              height: 30px;
+              width: 20px;
+              padding: 3px;
+            }
+            h4{
+              color: #FFF;
+            }
+          }
+        }
+
+      }
+   
+}
+
+
+
+
+
+
